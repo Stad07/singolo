@@ -57,9 +57,43 @@ header a {
     list-style: none;
     font-size: 12px;
     text-transform: uppercase;
-}
-
-.navigation li > a {
     padding: 0 10px;
 }
 
+.link_selected {
+    color: #f06c64;
+}
+
+.banner {
+    background-color: #f06c64;
+}
+
+.banner .wrapper {
+    display: flex;
+    flex-flow: row nowrap;    
+    padding: 60px 80px;
+}
+
+.image_left, .image_right {
+    position: relative;
+}
+
+.image_left img:last-child,
+.image_right img:last-child {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.image_left img:first-child,
+.image_right img:first-child {
+    opacity: .15;
+}
+
+.image_left {
+    margin-right: 75px;
+}
+
+.image_right {
+    align-self: center;
+}
