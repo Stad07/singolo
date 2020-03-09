@@ -36,6 +36,7 @@ body {
 }
 
 .get-quote__form {
+    position: relative;
     flex-basis: 618px;
 }
 
@@ -90,6 +91,26 @@ textarea {
     word-spacing: -2px;
 }
 
+.button {
+    font-family: 'latobold', sans-serif;
+    width: 100px;
+    position: absolute;
+    bottom: -50px;
+    display: inline-block;
+    padding: 8px 14px;
+    border: none;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #f0d8d9;
+    color: #d6564f;
+    transition: all 0.15s ease-out; 
+}
+
 .content__title {
     margin-bottom: 7px;
 }
@@ -129,16 +150,16 @@ textarea {
 }
 
 .ico_map {
-    background-image: url('./assets/img/map.svg');
+    background-image: url('./assets/img/icons/map.svg');
 }
 
 .ico_phone {
-    background-image: url('./assets/img/phone.svg');
+    background-image: url('./assets/img/icons/phone.svg');
     transform: rotate(270deg);
 }
 
 .ico_mail {
-    background-image: url('./assets/img/mail.svg');
+    background-image: url('./assets/img/icons/mail.svg');
     background-position: center 6px;
 }
 
@@ -166,7 +187,7 @@ textarea {
     line-height: 22px;
 }
 
-.svg {
+.socias-link {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -179,20 +200,43 @@ textarea {
     fill: #666d89;
 }
 
-.svg:first-child {
-    background-image: url(./assets/img/facebook.svg);   
+.socias-link:hover {
+    transition: all 0.3s ease-out;
 }
 
-.item__socials .svg:nth-child(2) {
-    background-image: url(./assets/img/google.svg);
+.socias-link:first-child {
+    background-image: url(./assets/img/icons/facebook.svg);   
 }
 
-.item__socials .svg:nth-child(3) {
-    background-image: url(./assets/img/twitter.svg);
+.socias-link:first-child:hover {
+    background-image: url(./assets/img/icons/_facebook.svg);
+    background-color: #666d89;   
 }
 
-.svg:last-child {
-    background-image: url(./assets/img/linkedin.svg);
-    margin-right: 0;
+.item__socials .socias-link:nth-child(2) {
+    background-image: url(./assets/img/icons/google.svg);
+}
+
+.item__socials .socias-link:nth-child(2):hover {
+    background-image: url(./assets/img/icons/_google.svg);
+    background-color: #666d89; 
+}
+
+.item__socials .socias-link:nth-child(3) {
+    background-image: url(./assets/img/icons/twitter.svg);
+}
+
+.item__socials .socias-link:nth-child(3):hover {
+    background-image: url(./assets/img/icons/_twitter.svg);
+    background-color: #666d89; 
+}
+
+.socias-link:last-child {
+    background-image: url(./assets/img/icons/linkedin.svg);
+}
+
+.socias-link:last-child:hover {
+    background-image: url(./assets/img/icons/_linkedin.svg);
+    background-color: #666d89; 
 }
 

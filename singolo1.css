@@ -189,27 +189,27 @@ figure img:first-child {
 }
 
 .services__item:nth-child(1) {
-    background: url(assets/img/pen.png) no-repeat;
+    background: url(assets/img/icons/pen.png) no-repeat;
 }
 
 .services__item:nth-child(2) {
-    background: url(assets/img/lamp.png) no-repeat;
+    background: url(assets/img/icons/lamp.png) no-repeat;
 }
 
 .services__item:nth-child(3) {
-    background: url(assets/img/heart.png) no-repeat;
+    background: url(assets/img/icons/heart.png) no-repeat;
 }
 
 .services__item:nth-child(4) {
-    background: url(assets/img/phone.png) no-repeat;
+    background: url(assets/img/icons/phone.png) no-repeat;
 }
 
 .services__item:nth-child(5) {
-    background: url(assets/img/support.png) no-repeat;
+    background: url(assets/img/icons/support.png) no-repeat;
 }
 
 .services__item:nth-child(6) {
-    background: url(assets/img/star.png) no-repeat;
+    background: url(assets/img/icons/star.png) no-repeat;
 }
 
 .layout-3-column .services__item {
