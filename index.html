@@ -195,7 +195,7 @@
             <div class="layout-2-column"> 
 				<div class="get-quote__form">
 					<form action method="POST">
-						<input type="text" name="name" placeholder="Name (Required)" required>
+						<input type="text" name="name" placeholder="Name (Required)" required pattern="[A-Za-z\s]{1,30}">
                         <input type="email" name="email" placeholder="Email (Required)" required>
                         <input type="text" name="subject" placeholder="Subject">						
                         <textarea name="project" placeholder="Describe your project in detail..."></textarea>
