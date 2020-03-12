@@ -397,7 +397,7 @@ figure img:first-child {
 }
 
 .socias-link:first-child:hover {
-    background-image: url(./assets/img/icons/_facebook.svg);
+    background-image: url(./assets/img/icons/facebook-hover.svg);
     background-color: #666d89;   
 }
 
@@ -406,7 +406,7 @@ figure img:first-child {
 }
 
 .socias-link:nth-child(2):hover {
-    background-image: url(./assets/img/icons/_google.svg);
+    background-image: url(./assets/img/icons/google-hover.svg);
     background-color: #666d89; 
 }
 
@@ -415,7 +415,7 @@ figure img:first-child {
 }
 
 .socias-link:nth-child(3):hover {
-    background-image: url(./assets/img/icons/_twitter.svg);
+    background-image: url(./assets/img/icons/twitter-hover.svg);
     background-color: #666d89; 
 }
 
@@ -424,7 +424,7 @@ figure img:first-child {
 }
 
 .socias-link:last-child:hover {
-    background-image: url(./assets/img/icons/_linkedin.svg);
+    background-image: url(./assets/img/icons/linkedin-hover.svg);
     background-color: #666d89; 
 }
 
