@@ -189,10 +189,15 @@ figure img:first-child {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.layout-4-column {
+    max-height: 601px;
 }
 
 .layout-4-column > * {
-    width: 23%;
+    width: 23%;        
 }
 
 .layout-3-column > * {
@@ -203,7 +208,7 @@ figure img:first-child {
     width: 48%;
 }
 
-.services__item {    
+.services__item {
     display: flex;
     flex-basis: 300px;
     margin-bottom: 28px;
@@ -257,6 +262,8 @@ figure img:first-child {
 }
 
 .item__content p {
+    max-height: 66px;
+    overflow: hidden;
     color: #767e9e;
     font-size: 12px;
     line-height: 22px;   
@@ -271,7 +278,7 @@ figure img:first-child {
 }
 
 .portfolio .wrapper {    
-    padding: 69px 0px 53px;
+    padding: 69px 0px 73px;
 }
 
 .portfolio__title, .about-us__title { 
@@ -325,10 +332,6 @@ figure img:first-child {
     margin-bottom: 20px; 
 }
 
-.portfolio__images:nth-child(4n) {
-    margin-right: 0;
-}
-
 .portfolio__images img {
     max-width: 100%;
 }
@@ -356,8 +359,11 @@ figure img:first-child {
     font-family: 'latoblack', sans-serif;
     font-size: 19px;
     line-height: 19px; 
-    color: #666d89;   
-    padding: 14px 0px 10px;
+    max-height: 19px;
+    overflow: hidden;
+    color: #666d89;
+    margin-top: 14px;
+    margin-bottom: 10px;   
     letter-spacing: -0.8px;
 }
 
@@ -367,7 +373,7 @@ figure img:first-child {
     line-height: 20px;
     color: #767e9e;
     margin-bottom: 25px;
-    text-align: justify;
+    text-align: left;
 }
 
 .socias-link {
