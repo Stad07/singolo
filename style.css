@@ -189,7 +189,6 @@ figure img:first-child {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .layout-4-column {
@@ -279,6 +278,10 @@ figure img:first-child {
 
 .portfolio .wrapper {    
     padding: 69px 0px 73px;
+}
+
+.portfolio__layout {
+    overflow: hidden;
 }
 
 .portfolio__title, .about-us__title { 
