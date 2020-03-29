@@ -114,9 +114,7 @@ header a {
 
 .slider {    
     position: relative;
-    display: flex;    
-    height: 600px;
-    overflow: hidden;
+    display: flex;
 }
 
 .slider__image {
@@ -130,15 +128,16 @@ header a {
 
 .slider__image.first {
     justify-content: space-between; 
-    padding: 0px 112px;
+    padding: 59px 112px 58px;
     background-color: #f06c64; 
-    box-shadow: 0px 6px #ea676b;  
+    box-shadow: 0px 6px #ea676b;
 }
 
 .slider__image.second {
     justify-content: center;
+    padding: 44px 112px 43px;
     background-color: #648bf0;
-    box-shadow: 0px 6px #5c7ff0;     
+    box-shadow: 0px 6px #5c7ff0;    
 }
 
 .second figure:first-child {
@@ -210,7 +209,8 @@ figure.image_center {
     padding: 75px 0px 65px;
 }
 
-.services h2 { 
+.services__title, .portfolio__title,
+.about-us__title, .get-quote__title { 
     font-family: "latoblack", sans-serif;
     font-size: 30px;
     line-height: 18px;
@@ -218,23 +218,25 @@ figure.image_center {
     margin-bottom: 27px;
 }
 
-.services__descr {
-    font-family: "latolight", sans-serif;
-    color: #767e9e;    
+.services__descr, .portfolio__descr,
+.about-us__descr, .get-quote__descr {
+    font-family: "latolight", sans-serif;        
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 45px;
-    text-align: justify;
+    color: #767e9e;    
 }
 
-.layout-4-column, .layout-3-column, .layout-2-column {
+.services__descr {
+    margin-bottom: 45px;
+    text-align: left;
+}
+
+.layout-4-column,
+.layout-3-column,
+.layout-2-column {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-}
-
-.layout-4-column {
-    max-height: 601px;
 }
 
 .layout-4-column > * {
@@ -290,25 +292,24 @@ figure.image_center {
     background-position: 0px 2px;
 }
 
-.services__item:nth-child(3n) {
-    margin-right: 0px;
-}
-
-.item__content h3 {
-    font-family: "latoblack", sans-serif;
-    color: #666d89;
+.item__title {
+    font-family: 'latoblack', sans-serif;
     font-size: 18px;
-    line-height: 18px;    
-    margin-bottom: 10px;
+    line-height: 18px; 
+    max-height: 18px;    
+    color: #666d89;
+    margin-bottom: 10px; 
+    overflow: hidden;
 }
 
-.item__content p {
-    max-height: 66px;
-    overflow: hidden;
+.item__descr {
+    font-family: 'latoregular', sans-serif;
+    max-height: 66px;    
     color: #767e9e;
     font-size: 12px;
     line-height: 22px;   
     text-align: justify;
+    overflow: hidden;
 }
 
 /* ..............................................Singolo-2...................................... */
@@ -323,23 +324,9 @@ figure.image_center {
 }
 
 .portfolio__layout {
+    max-height: 601px;
     overflow: hidden;
 }
-
-.portfolio__title, .about-us__title { 
-    font-family: "latoblack", sans-serif;
-    font-size: 30px;
-    line-height: 18px; 
-    color: #666d89;    
-    margin-bottom: 27px;
-}
-
-.portfolio__descr, .about-us__descr {
-    font-family: 'latolight', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #767e9e; 
-} 
 
 .portfolio__tags {
     padding: 10px 0px 19px;
@@ -387,7 +374,7 @@ figure.image_center {
 }
 
 .portfolio__images img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* section about-us */
@@ -409,25 +396,21 @@ figure.image_center {
     flex-basis: 300px;
 }
 
-.item__title {
-    font-family: 'latoblack', sans-serif;
+.about-us__item img {
+    margin-bottom: 14px;
+}
+
+.about-us__item .item__title { 
     font-size: 19px;
     line-height: 19px; 
-    max-height: 19px;
-    overflow: hidden;
-    color: #666d89;
-    margin-top: 14px;
-    margin-bottom: 10px;   
+    max-height: 19px;  
     letter-spacing: -0.8px;
 }
 
-.item__descr {
+.about-us__item .item__descr {
     font-family: 'latoregular', sans-serif;
-    font-size: 12px;
     line-height: 20px;
-    color: #767e9e;
     margin-bottom: 25px;
-    text-align: left;
 }
 
 .socias-link {
@@ -503,20 +486,15 @@ figure.image_center {
     flex-basis: 300px;
 }
 
-.get-quote h2 {
-    font-family: 'latoblack', sans-serif;
-    font-size: 30px;
-    line-height: 18px;
-    margin-bottom: 27px;
+.get-quote__title {
+    color: #f0d8d9;
 }
 
 .get-quote__descr {
     margin-bottom: 43px;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 300;
     text-align: justify;
     letter-spacing: -0.2px;
+    color: #f0d8d9;
 }
 
 input, textarea {
@@ -553,11 +531,11 @@ textarea {
 
 .button {
     font-family: 'latobold', sans-serif;
-    width: 100px;
+    text-transform: uppercase;    
     position: absolute;
     bottom: -50px;
     display: inline-block;
-    padding: 8px 14px;
+    padding: 8px 50px;
     border: none;
     background-color: #d6564f;
     color: #f0d8d9;
@@ -700,4 +678,128 @@ footer .socias-link {
     color: #f0d8d9;
     border: 1px solid #f0d8d9;
     cursor: pointer;  
+}
+
+/* meadia */
+
+@media screen and (max-width: 768px) {
+    .logo_text {
+        font-size: 32px;
+    }
+    .navigation {
+        width: 446px; 
+    }
+    .navigation li,
+    .footer__line span {
+        font-size: 16px; 
+    }
+    .slider__nav {
+        left: 30px;
+        width: 960px;
+    }
+    .services__layout > * {
+        width: 48%;
+    }
+    .services .services__item {
+        flex-basis: 470px;
+        background-size: 17%;
+        margin-bottom: 45px;
+        padding-left: 110px;                
+    }
+    .services__item:nth-child(odd) {
+        padding-right: 54px;
+    }
+    .services__item:nth-child(even) {
+        padding-right: 34px;
+    }
+    .services__item:nth-child(5),
+    .services__item:nth-child(6) {
+        margin-bottom: 0;
+    }
+    .services__title, .portfolio__title,
+    .about-us__title, .get-quote__title {         
+        font-size: 39px;
+        line-height: 36px;         
+    }
+    .services__descr, .portfolio__descr,
+    .about-us__descr, .get-quote__descr {
+        font-family: "latolight", sans-serif;           
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .portfolio__descr {
+        padding-right: 35px;
+    }
+    .tag:last-child {
+        padding: 0px 7px;
+    }
+    .item__title,
+    .about-us__item .item__title {        
+        font-size: 24px;
+        line-height: 24px; 
+        max-height: 24px;   
+    }
+    .item__descr,
+    .about-us__item .item__descr {
+        font-family: "latoregular", sans-serif;                   
+        font-size: 17px;
+        line-height: 30px;
+        max-height: 90px;
+        margin-bottom: 15px;              
+    }
+    .content__text {
+        font-family: "latolight", sans-serif;                   
+        font-size: 17px;
+        line-height: 30px;     
+    }
+    
+    .content__links, input, textarea {
+        font-family: "latolight", sans-serif;                   
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .button {
+        font-size: 16px;
+        line-height: 30px;
+        bottom: -55px;
+    }
+    .ico {
+        width: 16px;
+        height: 26px;
+    }
+    .ico_mail {
+        width: 16px;
+    }
+    .tag {        
+        font-size: 16px;
+        line-height: 30px;           
+    }
+    .portfolio__layout {
+        max-height: 1084px;
+    }
+    .portfolio__layout > * {
+        width: 32%;        
+    }
+    .portfolio__images {
+        margin-right: 18px;
+    }
+    .portfolio__images:nth-child(3n) {
+        margin-right: 0px;
+    }
+    .socias-link {
+        width: 44px;
+        height: 44px;
+        background-size: 14px;
+        background-size: 19px;    
+    }
+    .content__title {
+        font-size: 24px;
+    }
+    .get-quote__form {
+        flex-basis: 600px;
+    } 
+}
+
+@media screen and (max-width: 375px) {
+    
 }
