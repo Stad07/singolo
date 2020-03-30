@@ -402,6 +402,7 @@ figure.image_center {
 }
 
 .about-us__item img {
+    width: 100%;
     margin-bottom: 14px;
 }
 
@@ -615,7 +616,7 @@ textarea {
     background-color: #2d303a;
 }
 
-.footer .wrapper {
+.footer__wrapper {
     padding: 22px 0 19px;
 }
 
@@ -740,7 +741,8 @@ footer .socias-link {
         padding: 0px 7px;
     }
     .item__title,
-    .about-us__item .item__title {        
+    .about-us__item .item__title,
+    .content__title {        
         font-size: 24px;
         line-height: 24px; 
         max-height: 24px;   
@@ -752,14 +754,14 @@ footer .socias-link {
         line-height: 30px;
         max-height: 90px;
         margin-bottom: 15px;              
-    }
-    .content__text {
+    }      
+    .content__text, 
+    input, textarea {
         font-family: "latolight", sans-serif;                   
         font-size: 17px;
-        line-height: 30px;     
-    }    
-    .content__links, input, textarea {
-        font-family: "latolight", sans-serif;                   
+        line-height: 30px;
+    }
+    .content__links {
         font-size: 16px;
         line-height: 30px;
     }
@@ -793,12 +795,8 @@ footer .socias-link {
     }
     .socias-link {
         width: 44px;
-        height: 44px;
-        background-size: 14px;
+        height: 44px;        
         background-size: 19px;    
-    }
-    .content__title {
-        font-size: 24px;
     }
     .get-quote__form {
         flex-basis: 600px;
@@ -811,8 +809,7 @@ footer .socias-link {
         position: relative;
         display:  inline-block;
         width: 30px;
-        height: 30px;
-        margin: 25px;
+        height: 30px;    
     }
     .menu span {
         margin: 0 auto;
@@ -847,9 +844,10 @@ footer .socias-link {
     }
     /* end Mobile - Menu */
     .wrapper {
-        width: 980px;
+        width: 960px;
     }
-    .services__wrapper, .portfolio__wrapper, .about-us__wrapper {
+    .services__wrapper, .portfolio__wrapper,
+    .about-us__wrapper, .get-quote__wrapper {
         width: 860px;
     }  
     .logo_text {
@@ -889,10 +887,11 @@ footer .socias-link {
         margin-bottom: 70px; 
     }
     .item__title,
-    .about-us__item .item__title {        
+    .about-us__item .item__title,
+    .content__title  {        
         font-size: 44px;
         line-height: 44px; 
-        max-height: 44px;   
+        max-height: 44px;    
     }
     .item__descr,
     .about-us__item .item__descr {
@@ -900,8 +899,27 @@ footer .socias-link {
         font-size: 34px;
         line-height: 56px;
         max-height: 168px;        
-        margin-bottom: 15px;              
+        margin-bottom: 30px;              
     }
+    .about-us__item {
+        margin-bottom: 60px;
+    }
+    .about-us__item:last-child {
+        margin-bottom: 0;
+    }
+    .content__text, 
+    input, textarea {
+        font-family: "latolight", sans-serif;                   
+        font-size: 34px;
+        line-height: 56px;     
+    }
+    .content__links {
+        font-size: 32px;
+        line-height: 56px;
+    }
+    .get-quote__content {
+        margin-top: 30px;
+    }  
     .tag, .tag:first-child, .tag:last-child {        
         font-size: 30px;
         line-height: 60px; 
@@ -911,6 +929,15 @@ footer .socias-link {
     .portfolio__tags {
         padding: 40px 0px 60px;
     }
+    .about-us__layout {
+        flex-direction: column;    
+    }
+    .about-us__layout > * {
+        width: 100%;
+    }
+    .about-us__item img {
+        margin-bottom: 45px;
+    }
     .portfolio__layout {
         max-height: 1464px;
     }
@@ -919,5 +946,42 @@ footer .socias-link {
     }
     .portfolio__images {
         margin-right: 0;
+    }
+    .get-quote__layout {
+        flex-direction: column;
+    }
+    .get-quote__layout > * {
+        width: 100%;
+    }
+    .button {
+        position: relative;
+        width: 100%;
+        top: 20px;
+        font-size: 30px;
+        padding: 30px;        
+    }
+    .ico {
+        width: 32px;
+        height: 54px;
+        margin-right: 20px;
+    }
+    .ico_mail {
+        width: 32px;
+        height: 54px;
+        background-position: center 14px;
+    }
+    .footer__line {
+        justify-content: center;
+    }
+    .footer__wrapper {
+        padding: 30px 0px;
+    }
+    .footer__line span {
+        display: none;
+    }
+    .socias-link {
+        width: 84px;
+        height: 84px;        
+        background-size: 38px; 
     }
 }
